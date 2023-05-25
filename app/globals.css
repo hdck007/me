@@ -3,25 +3,75 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+}
+
+.astronaut {
+	transform: rotateY(180deg);
+}
+
+.wave {
+	text-align: center;
+	background: linear-gradient(
+		135deg,
+		teal,
+		#2eb4ae 25%,
+		#76b3d4 50%,
+		#1c9d93 75%,
+		teal
+	);
+	background-size: 200% auto;
+	color: #000;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine_wave 0.5s linear infinite;
+}
+
+@keyframes shine_wave {
+	to {
+		background-position: 200%;
+	}
+}
+
+.text-shadows {
+	transition: 0.5s all ease;
+}
+
+.text-shadows:hover {
+	transition: 0.1s;
+	text-shadow: 1px 1px 1px #34d399, 2px 2px 1px #6ee7b7;
+}
+
+.height-opacity{
+	opacity: 1;
+}
+
+
+/* media queries based on height of viewport */
+@media (max-height: 550px) {
+	.height-opacity {
+		opacity: 0.3;
+	}
 }

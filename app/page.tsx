@@ -1,113 +1,167 @@
-import Image from 'next/image'
+import Astronaut from './components/AstronautLottie/Astronaut';
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	return (
+		<main className='min-h-screen items-center justify-center overflow-hidden bg-stone-950'>
+			<div className='w-full top-0 left-0 h-screen overflow-hidden absolute opacity-60 blur-xl  bg-gradient-radial from-zinc-800 to-stone-950'></div>
+			<div className='w-full absolute top-0 left-0 blur-3xl'>
+				<div className='w-full md:w-1/2 mx-auto h-[300px] -translate-y-16 rounded-b-full overflow-hidden opacity-70 blur-3xl bg-gradient-conic from-purple-800 to-fuchsia-950 via-rose-900 '></div>
+			</div>
+			<nav className='w-full relative py-6 px-4 sm:px-24 mb-12 z-50'>
+				<div className='w-full flex items-center sm:w-[700px] mx-auto'>
+					<a
+						target='_blank'
+						href='https://www.linkedin.com/in/haridarshan-choudhary/'
+						className='text-2xl pr-1'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							width='24'
+							height='24'
+							className='hover:opacity-100 opacity-50 fill-white transition-all ease-linear cursor-pointer'
+							viewBox='0 0 256 256'
+						>
+							<rect width='256' height='256' fill='none'></rect>
+							<rect
+								x='36'
+								y='36'
+								width='184'
+								height='184'
+								rx='8'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></rect>
+							<line
+								x1='124'
+								y1='120'
+								x2='124'
+								y2='176'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></line>
+							<line
+								x1='84'
+								y1='120'
+								x2='84'
+								y2='176'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></line>
+							<path
+								d='M124,148a28,28,0,0,1,56,0v28'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+							<circle cx='84' cy='80' r='16'></circle>
+						</svg>
+					</a>
+					<a
+						target='_blank'
+						href='https://github.com/hdck007'
+						className='text-2xl'
+					>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							width='24'
+							height='24'
+							className='hover:opacity-100 opacity-50 fill-white transition-all ease-linear cursor-pointer'
+							viewBox='0 0 256 256'
+						>
+							<rect width='256' height='256' fill='none'></rect>
+							<path
+								d='M84,240a23.9,23.9,0,0,0,24-24V168'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+							<path
+								d='M172,240a23.9,23.9,0,0,1-24-24V168'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+							<path
+								d='M152,168h16a23.9,23.9,0,0,1,24,24v8a23.9,23.9,0,0,0,24,24'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+							<path
+								d='M104,168H88a23.9,23.9,0,0,0-24,24v8a23.9,23.9,0,0,1-24,24'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+							<path
+								d='M111.8,64A52,52,0,0,0,68,40a52,52,0,0,0-3.5,44.7A49.3,49.3,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.3,49.3,0,0,0-8.5-27.3A52,52,0,0,0,188,40a52,52,0,0,0-43.8,24Z'
+								fill='none'
+								stroke='currentColor'
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='24'
+							></path>
+						</svg>
+					</a>
+				</div>
+			</nav>
+			<div className='w-full relative'>
+				<div className='px-4 sm:px-24 w-full mb-10'>
+					<div className='text-center relative'>
+						<h1 className='text-3xl text-white font-bold'>
+							Haridarshan Choudhary
+						</h1>
+						<p className=' mt-4 text-base hover:bg-clip-text hover:bg-gradient-to-r text-gray-200 '>
+							Fullstack Developer
+						</p>
+					</div>
+					<div className=' mx-auto mt-16 text-white w-full lg:w-[700px] md:w-[580px]'>
+						<p className='my-10'>
+							From aspiring{' '}
+							<span className=' bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-fuchsia-600 via-rose-500  '>
+								astronaut to orbiting code wizard
+							</span>
+							, I navigate the celestial realm of software development with{' '}
+							<span className='text-shadows text-emerald-400'>
+								cosmic curiosity
+							</span>{' '}
+							and{' '}
+							<span className='animate-text-shimmer bg-[linear-gradient(110deg,#0ea5e9,45%,#0e0e0e,55%,#0ea5e9)] bg-[length:250%_100%] inline-block bg-clip-text text-transparent'>
+								stellar solutions.
+							</span>
+						</p>
+						<p>
+							Working at{' '}
+							<span className='wave'>
+								<a href='https://tealfeed.com/' target='_blank'>
+									Tealfeed
+								</a>
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+			<Astronaut />
+		</main>
+	);
 }
